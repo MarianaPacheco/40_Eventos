@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Hace que mi página sea compatible con Internet Explorer -->
+	<!--  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Twitter</title>
+	<link rel="shortcut icon" href="img/lupa-favicon.png"> <!-- "shortcut icon" nos indicaque es tipo icono, relación -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<header>		<!-- Encabezado -->
+			<div class="encabezado row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h1>TODO APP</h1>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="row">		<!-- Textarea -->
+				<div class="col-xs-12col-sm-12 col-md-12 col-lg-12">
+					<textarea id="text" rows="4" class="error" placeholder="Añade tu nueva tarea"></textarea>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12col-sm-12col-md-12col-lg-12">
+					<button id="btnAdd" class="btn btn-primary" onclick="btn_agregar()" type="submit">+ Añadir tarea</button>
+				</div>
+			</div>
+		</section>	
+	</div>
+	<!-- Incluir todos tus scripts apartir de este punto -->
+    <!-- jQuery (necesario para que funcionen los componentes de Bootstrap) -->
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+</body>
+</html>

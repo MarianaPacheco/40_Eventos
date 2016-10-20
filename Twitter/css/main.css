@@ -1,0 +1,96 @@
+.encabezado{
+	background-color: gray;
+	text-align: center;
+}
+
+textarea{
+	height: 100%;
+	width: 100%;
+	margin-top: 2%;
+	margin-left: -5%;
+}
+
+.btn, textarea{
+	margin-left: 1%;
+}
+
+/* nav.navbar {
+    background-color: #1495CE;
+}
+.logo{
+	margin-top: -3%;
+	height: 180%;
+	margin-left: 10%;
+}
+select{
+border-style: none!important;
+background-color: transparent!important;
+box-shadow: none!important;
+}
+			** SECCION **
+.myTitle{
+	font-size: 390%;
+}
+.conte{
+	font-size: 200%;
+	color: #1495CE;
+}
+iframe{
+	border: 6px ridge #1495CE;
+}
+.myP{
+	margin-top: 3%;
+	font-size: 25px;
+}
+			** FOOTER **
+footer{
+	height: 10%;
+}
+p span{
+	color: #D8CACA;
+	font-weight: 600;
+}
+.icono{
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	color: white;
+}
+		** UTILIDADES **
+Color de Fondo
+.bg-blue{
+	background-color: #1495CE;
+}
+Textos de color
+.text-white{
+	color: white!important;
+}
+.text-black{
+	color: black;
+}
+grosor de texto
+.fw-600{
+	font-weight: 600;
+}
+sombra
+.sombra{
+	-webkit-filter: drop-shadow(1px 1px 1px black);
+	filter: drop-shadow(1px 1px 1px black);
+}
+Padding
+.pd-0{
+	padding: 0;
+}
+.pd-3{
+	padding: 3%;
+}
+.pdr-3{
+	padding-right: 3%;
+}
+.pd-5{
+	padding: 5%;
+}
+Margin
+.m-0{
+	margin: 0;
+} */
