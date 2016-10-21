@@ -7,11 +7,24 @@ textarea{
 	height: 100%;
 	width: 100%;
 	margin-top: 2%;
-	margin-left: -5%;
+	margin-left: -.2%;
 }
 
-.btn, textarea{
-	margin-left: 1%;
+.btn {
+	margin-left: 2%;
+	margin-top: 1%;
+}
+
+li{
+	list-style: none;
+	margin-top: 2%;
+	margin-left: 1.5%;
+	background-color: gray;
+	width: 97%;
+}
+
+li button {		/* Margen al botón de eliminar */
+	margin-left: 90%;
 }
 
 /* nav.navbar {

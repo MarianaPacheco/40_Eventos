@@ -1,22 +1,46 @@
-function validateText(){
+function agregarLista(){
 
-var texto = document.getElementById("text")value;
+	var texto = document.getElementById("text").value;
 
-if (texto === "" || texto === null || texto.length < 40){
-		var mensaje = document.createElement("span");
-		//span.setAttribute("class", "error");
-		mensaje.innerHTML = "Campo obligatorio. Mínimo 40 caracteres.";
-		document.getElementById("text")[0].appendChild(mensaje); 
-	}
-} else if (texto.legth > 100){
-	var mensaje = document.createElement("span");
-	//span.setAttribute("class", "error");
-	mensaje.innerHTML = "Máximo 100 caracteres.";
-	document.getElementById("text")[0].appendChild(mensaje); 
-} else {
-	var check = document.createElement("li");
-	check.innerHTML = texto.value;
+		if (texto === "" || texto === null || texto.length < 4){
+			alert("Campo obligatorio. Mínimo 40 caracteresy máximo 100."); 
+		} else{
+
+			var check = document.createElement("input");	/*Crea un elemento input de tipo checkbox*/ 
+			check.type = "checkbox";
+			var lista = document.createElement("li");		/*Crea un elemento lista */
+			lista.appendChild(check);		/*Incrusta el elemto check después (a un lado) de la lista. En este caso pone el check a un lado de la viñeta de la lista pero la viñeta no se ve */
+			lista.appendChild(document.createTextNode(texto)); 	/*Crea el texto que se insertó en el textarea a un lado del check*/
+			document.body.appendChild(lista);	/*Incrusta la lista hasta abajo de lo último que hay en el body*/
+			
+			var eliminar = document.createElement("button");	/*La variable eliminar crea un botón*/
+			var spanIcon = document.createElement("span");		/*La variable spanIcon crea un elemento span que es en donde va a ir el botón*/ 
+			spanIcon.setAttribute("class", "fa fa-trash-o");	/*Al span se le el atributo de una clase de bootstrap que inserta la imagen del botecito de basura*/
+			eliminar.appendChild(spanIcon);		/*Incrusta la imagen del botecito dentro del span*/
+			lista.appendChild(eliminar);	/*Incrusta la imagen del botecito a un lado de lo que hay en lista*/
+
+			document.body.appendChild(lista);			
+		}
+	    
+	    function borrar (){
+	    	lista.parentNode.removeChild(lista);
+	    }
+	    eliminar.onclick = borrar;
+
+	    function tachar () {
+	    	lista.parentNode.strike(lista);
+	    }
+		check.onclick = tachar;
 }
+
+
+/*if( $('.micheckbox').prop('checked') ) {
+    alert('Seleccionado');
+    Checa si esta seleccionado el checkbox
+}*/
+
+
+
 
 
 

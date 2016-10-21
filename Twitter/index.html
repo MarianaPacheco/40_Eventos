@@ -6,8 +6,10 @@
 	<!--  -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Twitter</title>
-	<link rel="shortcut icon" href="img/lupa-favicon.png"> <!-- "shortcut icon" nos indicaque es tipo icono, relación -->
+	<!-- <link rel="shortcut icon" href="img/lupa-favicon.png">  "shortcut icon" nos indicaque es tipo icono, relación  -->
 	<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 </head>
@@ -23,12 +25,12 @@
 		<section>
 			<div class="row">		<!-- Textarea -->
 				<div class="col-xs-12col-sm-12 col-md-12 col-lg-12">
-					<textarea id="text" rows="4" class="error" placeholder="Añade tu nueva tarea"></textarea>
+					<textarea id="text" rows="4" class="error" placeholder="Añade tu nueva tarea" autofocus=" "></textarea>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-xs-12col-sm-12col-md-12col-lg-12">
-					<button id="btnAdd" class="btn btn-primary" onclick="btn_agregar()" type="submit">+ Añadir tarea</button>
+					<button id="btnAdd" class="btn btn-primary" onclick="agregarLista()">+ Añadir tarea</button>
 				</div>
 			</div>
 		</section>	
@@ -38,6 +40,5 @@
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/slick.min.js"></script>
 </body>
 </html>
