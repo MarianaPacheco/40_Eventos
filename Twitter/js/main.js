@@ -10,7 +10,7 @@ function agregarLista(){
 			check.type = "checkbox";
 			var lista = document.createElement("li");		/*Crea un elemento lista */
 			lista.appendChild(check);		/*Incrusta el elemto check después (a un lado) de la lista. En este caso pone el check a un lado de la viñeta de la lista pero la viñeta no se ve */
-			lista.appendChild(document.createTextNode(texto)); 	/*Crea el texto que se insertó en el textarea a un lado del check*/
+			var item = lista.appendChild(document.createTextNode(texto)); 	/*Crea el texto que se insertó en el textarea a un lado del check*/
 			document.body.appendChild(lista);	/*Incrusta la lista hasta abajo de lo último que hay en el body*/
 			
 			var eliminar = document.createElement("button");	/*La variable eliminar crea un botón*/
@@ -19,7 +19,11 @@ function agregarLista(){
 			eliminar.appendChild(spanIcon);		/*Incrusta la imagen del botecito dentro del span*/
 			lista.appendChild(eliminar);	/*Incrusta la imagen del botecito a un lado de lo que hay en lista*/
 
-			document.body.appendChild(lista);			
+			document.body.appendChild(lista);
+
+			if( $('check').prop('checked') ) {
+	    	var it = strike(item);
+    	}			
 		}
 	    
 	    function borrar (){
@@ -27,10 +31,6 @@ function agregarLista(){
 	    }
 	    eliminar.onclick = borrar;
 
-	    function tachar () {
-	    	lista.parentNode.strike(lista);
-	    }
-		check.onclick = tachar;
 }
 
 
